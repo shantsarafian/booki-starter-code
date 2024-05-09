@@ -17,38 +17,87 @@
 <body>
     <div class="main-container">
         <header>
-            <img src="images/logo/Booki.png" alt="Logo of Booki" title="Bookilogo">
+            <img src="images/logo/Booki.png" alt="Logo of Booki" title="Bookilogo" style="width: 100px; height: auto;">
+            <style>
+                .topleft {
+                    float: right;
+                    margin-left: 10px;
+                }
+            
+                .topleftact {
+                    float: right;
+                }
+            </style>
+            
+            <p class="topleft">Hébergement</p>
+            <p class="topleftact">activités</p>
+                  
             <h1>Trouvez votre hébergement pour des vacances de réve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
         </header>
 
         <main>
-            <form action="/search" method="get">
-                
-                <input type="text" name="q" placeholder="Search...">
-                <button type="submit">Search</button>
-          
-              </form>
+            <div class="search-container">
+                <i class="fa-solid fa-location-dot"></i>
+                <form action="/search" method="get">
+                  <input type="text" name="q" placeholder="Marseille,France">
+                  <button class="Rechercher" type="submit">Rechercher</button>
+                </form>
+              </div>
+              
+            
 
               <div class="container">
                 <h3>Filers</h3>
-                <p>Économique</p>
-                <p>Familial</p>
-                <p>Romantique</p>
-                <p>Romantique</p>
-                <p>Nos pépites</p>
-                
+                <div class="container">
+                    <style>
+                        .container {
+                          font-size: 16px;
+                        }
+                        .container p {
+                          margin-bottom: 10px;
+                        }
+                        .container p i {
+                          margin-right: 5px;
+                        }
+                      </style>
+                    <p class="econimic"> <i class="fa-solid fa-money-bill-wave"></i>Économique</p>
+                    <p class="econimic"><i class="fa-solid fa-person"></i>Familial</p>
+                    <p class="econimic"><i class="fa-solid fa-heart"></i>Romantique</p>
+                    <p class="econimic"><i class="fa-solid fa-fire"></i></i>Nos pépites</p>
+                  </div>
+                  
               </div>
               <p>Plus de 500 logements sont disponibles dans cette ville</p>
               
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
+                    <h2>Hébergement à Marseille</h2>
+                    <div class="card-container">
+                        <article class="card">
+                            <div class="card-content">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel du port</h3>
+                                    <p class="card-subtitle">Nuit à partir de 52<span class="price"></span><span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>           
+                    
 
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        <div>
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        
                     </div>
                     <div class="populaires-cards">
                         <a href="#">
@@ -61,7 +110,7 @@
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" arffga-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>

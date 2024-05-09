@@ -3,7 +3,6 @@
     font-family: 'Raleway', sans-serif;
     
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -14,16 +13,34 @@
   
   .container p {
     margin-right: 50px;
-    border: 2px solid rgb(157, 157, 157);
-    border-radius: 50%; 
     padding: 10px; 
     margin: 5px; 
   }
-  
-form {
+
+  .search-container {
     display: flex;
     align-items: center;
   }
+  
+  .search-container form {
+    margin-left: 10px;
+  }
+  
+
+  .econimic {
+    display: inline-flex; 
+    align-items: center; 
+    font-weight: bold;
+}
+
+.econimic i {
+    margin-right: 
+}
+
+.topleftact {
+    color: #0065FC;
+text-decoration: underline;
+}
   
   input[type="text"] {
     padding: 8px;
@@ -31,18 +48,15 @@ form {
     border-radius: 4px;
   }
   
-  button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
+ .Rechercher {
+    background-color: #0065FC;
+    color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+    height: 36px;
+    width: 70px;
+    border-radius: 8px;
+ }
   
-  button:hover {
-    background-color: #0056b3;
-  }
 
 :root {
     --main-color: #0065FC;
@@ -116,6 +130,11 @@ a {
 .hebergements {
     width: 65%;
 }
+
+.card-container{
+width: 32%;
+}
+
 
 /****** Populaires ***********/
 .populaires {
