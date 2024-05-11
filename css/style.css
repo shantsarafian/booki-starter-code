@@ -25,16 +25,57 @@
   .search-container form {
     margin-left: 10px;
   }
+
+  .search-info{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+  }
   
 
-  .econimic {
+.filter {
     display: inline-flex; 
     align-items: center; 
     font-weight: bold;
+    border: 2px solid #F2F2F2;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 25px;
 }
 
-.econimic i {
-    margin-right: 
+.filters {
+display: flex;
+flex-direction: row;
+gap: 15px;
+}
+
+.topleft {
+    float: right;
+    margin-left: 10px;
+}
+
+.topleftact {
+    float: right;
+}
+
+.container {
+  font-size: 16px;
+}
+.container p {
+  margin-bottom: 10px;
+}
+.container p i {
+  margin-right: 5px;
+}
+
+.topleft {
+    float: right;
+    margin-left: 10px;
+}
+
+.topleftact {
+    float: right;
 }
 
 .topleftact {
