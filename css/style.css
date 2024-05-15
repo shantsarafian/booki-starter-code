@@ -121,6 +121,51 @@ a {
     margin-bottom: 5px;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 0;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header>div:first-child {
+    flex: 0;
+}
+
+
+header>div:last-child {
+    flex: 1;
+    text-align: right;
+    margin-left: 32px;
+}
+
+header>div:last-child>nav>a {
+    margin-right: 16px;
+    padding-top: 16px;
+}
+
+header>div:last-child>nav>a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+main>section.filters {
+    margin-bottom: 32px;
+}
+
+main>section.filters>h2 {
+    margin: 8px 0;
+    font-size: 1.2rem;
+}
+
+main>section.filters>p {
+    margin: 0;
+}
+
+
 
 
 
