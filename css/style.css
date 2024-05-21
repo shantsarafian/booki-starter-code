@@ -135,7 +135,6 @@ header>div:first-child {
     flex: 0;
 }
 
-
 header>div:last-child {
     flex: 1;
     text-align: right;
@@ -153,7 +152,7 @@ header>div:last-child>nav>a:hover {
 }
 
 main>section.filters {
-    margin-bottom: 32px;
+    margin-bottom: 12px;
 }
 
 main>section.filters>h2 {
@@ -196,6 +195,46 @@ main>section.filters>.search-bar>input {
 main>section.filters>.search-bar>i {
     background-color: var(--main-bg-color);
     color: black;
+}
+
+.filters-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.filters-bar>div {
+    border: 2px solid var(--main-bg-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+main>section>div.information>div {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+main>section>div.information>div>i {
+    margin-right: 10px;
+}
+
+.filters-bar>div:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filters-bar>div:first-child:hover {
+    background-color: transparent;
+}
+
+.filters-bar>div:first-child {
+    border: 0 solid transparent;
+}
+
+.filters-bar>div>i {
+    margin-right: 12px;
 }
 
 
@@ -280,7 +319,9 @@ footer>div>nav>a {
     font-size: 0.9rem;
 }
 
-
+@media (max-width: 600px) { 
+    body{background-color: #0065FC;}
+    }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
