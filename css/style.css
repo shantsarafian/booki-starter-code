@@ -211,13 +211,13 @@ main>section.filters>.search-bar>i {
     font-weight: 700;
 }
 
-main>section>div.information>div {
+main>section.information {
     display: flex;
     align-items: center;
     margin-left: 25px;
 }
 
-main>section>div.information>div>i {
+main>section.information>i {
     margin-right: 10px;
 }
 
@@ -318,10 +318,6 @@ footer>div>nav>a {
     margin-top: 8px;
     font-size: 0.9rem;
 }
-
-@media (max-width: 600px) { 
-    body{background-color: #0065FC;}
-    }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
