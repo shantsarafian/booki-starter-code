@@ -201,6 +201,11 @@ main>section.filters>.search-bar>button {
     font-weight: 700;
 }
 
+.littleloc {
+    font-size: .75em;
+    vertical-align: .125em;
+}
+
 main>section.filters>.search-bar>input {
     color: black;
     font-weight: 700;
@@ -216,14 +221,31 @@ main>section.filters>.search-bar>i {
     flex-direction: row;
     gap: 12px;
     margin-top: 32px;
+    align-items: baseline;
 }
 
-.filters-bar>div {
+.filters-bar-title {
+    font-weight: 700;
+}
+
+
+.filters-bar-elements {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters-bar-element {
     border: 2px solid var(--main-bg-color);
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 700;
+    margin-right: 16px;
 }
+
+.filters-bar-element>i {
+    margin-right: 8px;
+}
+
 
 main>section.information {
     display: flex;
@@ -344,9 +366,16 @@ footer>div>nav>a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filters-bar {
+        flex-direction: column;
+    }
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
+    
 
     .hebergements {
         width: 100%;
@@ -424,7 +453,20 @@ footer>div>nav>a {
     }
 
     .filters-bar {
-        display: none;
+        flex-direction: column;
+    }
+
+    .filters-bar-element {
+        margin: 0%;
+        padding: 16px;
+        border-radius: 40px;
+    }
+
+    .filters-bar-elements {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 16px;
     }
 
     main>section.filters>h2 {
@@ -434,10 +476,11 @@ footer>div>nav>a {
     main>section.filters>.search-bar>.large-button {
         display: none;
     }
-    
+
     main>section.filters>.search-bar>.small-button {
         display: inline;
     }
+
     main>section.filters>.search-bar {
         display: flex;
         margin: 0 32px;
@@ -445,6 +488,10 @@ footer>div>nav>a {
 
     main>section.filters>.search-bar>input {
         flex: 1;
+    }
+
+    .information {
+        padding: 0 8px;
     }
 
     .hebergements-and-populaires {
